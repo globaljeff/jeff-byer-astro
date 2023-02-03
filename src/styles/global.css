@@ -36,13 +36,6 @@
 		font-weight: bold;
 	}
 
-	a {
-		color: var(--theme-accent);
-	}
-
-	a:hover {
-		text-decoration: underline;
-	}
 }
 
 @tailwind components;
