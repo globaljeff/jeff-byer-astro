@@ -1,49 +1,76 @@
 ---
 import PageLayout from "@/layouts/Base";
 import { Image } from "@astrojs/image/components";
-import aboutImg from "../assets/about-astro.png";
+import SocialList from "@/components/SocialList";
+import aboutImg from "../assets/jeff-byer-profile-photo-2021-v2-1200.jpg";
 
 const meta = {
-	title: "About",
-	description: "I'm a starter theme for Astro.build",
+	title: "About Jeff Byer",
+	description: "About Jeff Byer Founder of the full-service digital marketing firm Byer Company",
 };
 ---
 
 <PageLayout meta={meta}>
 	<div class="space-y-6">
-		<h1 class="title">About</h1>
+		<h1 class="title">About Jeff Byer</h1>
 		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
-			website.
+			Founder and CEO, <a href="https://www.byer.co">Byer Company</a>
 		</p>
 		<div class="flex justify-center">
 			<Image
 				src={aboutImg}
-				alt="A cartoon cactus looking at the 'Astro.build' logo"
+				format="webp"
+				alt="Jeff Byer Portrait"
+				title=" Jeff Byer Photo"
 				loading="eager"
+				width="400"
+				height="400"
 			/>
 		</div>
-		<p>Here are my some of my awesome built in features:</p>
+		<div class="text-center p-0 m-0">
+			<a href="/img/jeff-byer-profile-photo-2021-v2.jpg" target="_blank" rel=" noopener">
+				<small>download full resolution</small>
+			</a>
+		</div>
+		<p>Founder of the full-service digital marketing firm Byer Company, Jeff Byer has been a leader in the media, tech and marketing industries for more than 20 years. In fact, his former podcast, <a href="https://www.digitalrage.fm" target="_blank" rel="noopener noreferrer">Digital Rage</a>, blazed the trial for countless podcasts with its coverage of topics around social media, SEO and digital marketing. While he ended his podcast in 2019, Jeff continues to share his knowledge of tech and marketing spaces, appearing on <a href="https://www.redhat.com/en/compiler-podcast" target="_blank" rel="noopener noreferrer">Compiler</a> and <a href="https://youtu.be/86IGUsOS2kI" target="_blank" rel="noopener noreferrer">Shoponomics</a> podcasts, as well as profiles in <a href="https://www.business.com/articles/influencer-marketing-losing-influence/" target="_blank" rel="noopener noreferrer">Business.com</a>, <a href="https://www.lifewire.com/this-80-dollar-hub-can-almost-turn-a-macbook-air-into-a-macbook-pro-7101022"  target="_blank" rel="noopener noreferrer">Lifewire</a>, <a href="https://welpmagazine.com/5-most-comfortable-chairs-for-programmers-to-sit-on/" target="_blank" rel="noopener noreferrer nofollow">Welp Magazine</a>, & various blogs.</p>
+		<SocialList />
+		<h2>Early Career</h2>
+		<p>After graduating with his bachelors from the Annenberg School of Communication at the University of Southern California, Jeff founded Globaldog Digital Communications. Based in Studio City, California, Globaldog designed websites in the retail space. One of his sites, Hello My Baby, a social media-esque forum, turned into a major success for Globaldog when it was sold to an interactive health agency. </p>
+
+		<p>Jeff then ventured into the corporate world, joining ARAMARK Uniform Services as a database administrator. There, Jeff assisted the development of a cutting-edge intranet, which improved internal communications for clients, including Sears, Pepsi, Midas, Waste Management and Boston Market. </p>
+
+		<h2>Hello, Hollywood</h2>
+		<p>With Hollywood in his backyard, Jeff entered into the entertainment space, beginning in quality assurance for Columbia Tri-Star. Jeff later transitioned to website production, building TV and film websites for programs including Wheel of Fortune, Jeopardy and Party of Five, and films such as Big Daddy, Godzilla, and Men in Black. </p>
+
+		<p>Jeff then moved on to Sony Pictures Digital Entertainment, developing audio and video pieces for feature films including Spider-Man and Crouching Tiger, Hidden Dragon. During his time at Sony, Jeff pioneered the Screenblast Movie Studio and Screenblast Music Studio softwares, which allowed consumers to create studio quality movies and music from their own homes. Not only was Jeff involved in the production of both programs from inception to point of sale, he also oversaw everything from packaging to product photos. </p>
+
+		<h2>Digital Media is in His DNA</h2>
+		<p>fter the success of the Screenblast software, Jeff joined Dedicated Net Access (DNA) as Manager of Production. There Jeff developed digital media for the studio’s top brands, including Anheuser-Busch, Nissan, McDonald’s, NASA and Warner Brothers, to name a few. Jeff's success with managing the parent companies often brought the subsidiaries to the studio, which he would then unify and also maintain. These household names included SeaWorld, Busch Gardens, Discovery Cove, Water Country USA, Adventure Island, and Sesame Place.</p>
+
+		<h2>Roll of the Dice</h2>
+		<p>Ready to venture out on his own, Jeff became a partner with Dice Media. With his expertise in creating digital media for large brands, Jeff gave the smaller businesses that Dice Media served the big-brand service they deserved. His leading-edge media strategies and original digital platforms helped clients of all sizes thrive and realize their goals. </p>
+
+		<h2>Serial Entrepreneur</h2>
+		<p>In 2004, Jeff and his business partner opened Print Fellas, an online marketing business that focused on high-quality print marketing services. Jeff initiated the project management and e-commerce system which the company still implements to this day. After a decade of success, Jeff acquired the business from his partner, becoming the sole owner of Print Fellas. </p>
+
+		<h2>Serious Chops</h2>
+		<p>Jeff is a Franklin-Covey certified Project Manager with qualifications in Photoshop, Illustrator, HTML, PHP, JavaScrip, MySQL, SEO, Bing Ads and Google Ads. In addition, Jeff is a co-author of 5 US Patents for internet content management systems. (If you go to look him up, use his full name, John Jeffrey Byer.)</p>
+
+		<h2>Leading Marketing Agency for the Tech Industry</h2>
+		<p>Today, Byer Company provides digital marketing strategy and execution for global technology organizations, including NTT, Wiliot and Advanced Micro Instruments. Along with its tech clients, Byer Company also serves brands in e-commerce, sports nutrition and agriculture. No matter the industry, clients reach their specific business objectives through Byer Company’s proven expertise and complete, end-to-end services, including:</p>
 		<ul class="list-inside list-disc">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
+			<li>Global marketing strategies</li>
+			<li>Web development and SEO specialists</li>
+			<li>Video, illustration and 3D capabilities</li>
+			<li>Brand management and strategy</li>
+			<li>Audience intelligence</li>
+			<li>Advertising and social media management</li>
 		</ul>
-		<p>
-			Clone or fork my
-			<a
-				class="cactus-link inline-block"
-				href="https://github.com/chrismwilliams/astro-cactus"
-				target="_blank"
-				rel="noopener noreferrer"
-				aria-label="github repository"
-			>
-				repo
-			</a> if you like me!
-		</p>
+
+		<h2>Talk to Jeff</h2>
+		<p>Just like he did with brands such as NASA, Warner Brothers and Anheuser-Busch, Jeff takes a hands-on approach in each clients’ day-to-day business. To see how Jeff can help your business to realize its goals, just reach out and say hello.</p>
+
+		<blockquote>"I want my work to make an important, positive impact on my client's bottom line giving them measurable and reportable returns." - Jeff Byer</blockquote>
+
 	</div>
 </PageLayout>
